@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="/css/admin.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- <h4>Admin Login</h4>
+        <form
+            class="login-form"
+            onsubmit=" return validateForm()"
+            name="loginform"
+            action="menu.html"
+            method="GET"
+        >
+            <div class="input-group flex-column">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="addon-wrapping"
+                        >Username</span
+                    >
+                </div>
+                <input
+                    id="usr"
+                    type="text"
+                    class="form-control"
+                    placeholder="Username"
+                
+                    aria-describedby="addon-wrapping"
+                /> 
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="addon-wrapping"
+                        >Password</span
+                    >
+                </div>
+                <input
+                    id="pw"
+                  
+                    class="form-control"
+                    placeholder="Password"
+                 
+                    aria-describedby="addon-wrapping"
+                    type="password"
+                />
+              
+            </div>
+        </form> -->
+
+        <!-- <nav><a href="#" class="focus">Log In</a></nav> -->
+
+        <form
+            class="login-form"
+         onsubmit="return validateForm()"
+            name="loginform"
+            action="adminPanel.html"
+            method="GET"
+        >
+            <h2>Admin Login</h2>
+
+            <input
+                id="usr"
+                type="text"
+                name="username"
+                class="text-field"
+                placeholder="Username"
+            />
+            <input
+                id="pw"
+                type="password"
+                name="password"
+                class="text-field"
+                placeholder="Password"
+            />
+
+            <button href="" type="submit" class="button" value="Log In">Log In</button> 
+        </form>
+
+        <script>
+            validateForm = () => {
+                let un = document.getElementById("usr").value;
+                let pw = document.getElementById("pw").value;
+                console.log(pw);
+
+                var username = "username";
+                var password = "password";
+                if (un == username && pw == password) {
+                    return true;
+                } else {
+                    alert(
+                        "Login was unsuccessful, please check your username and password"
+                    );
+                    return false;
+                }
+            };
+
+            //  addEventListener("click", validateForm())
+        </script>
+    </body>
+</html>

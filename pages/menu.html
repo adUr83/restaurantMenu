@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+<link rel="stylesheet" href="/css/menu.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Menu</title>
+   
+</head>
+<body>
+
+    <div class="wrapper d-flex flex-row justify-content-between" >
+  <!-- profile -->
+        <div id="profile" class="card mt-2 " style="width: 18rem;  ">
+            <h5  style = "background-color: #D6EAF8;"class="card-header price">My Profile <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill mb-1 ml-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg></h5>
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick examp</p>
+              <button  href="#" class="filter-btn">Go Your Account</button>
+            </div>
+        </div>
+<!-- profile end -->
+        <div class="d-flex ">
+            <div class="d-inline-flex  p-2 bd-highlight">
+            <div class="card">
+                <h5  style = "background-color: #D6EAF8;"class="card-header price">Cart <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bag mb-1 ml-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M14 5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5zM1 4v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4H1z"/>
+                    <path d="M8 1.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z"/>
+                  </svg></h5>
+                <div   class="card-body"> 
+                    
+                     <div id = "pro-area"> <!-- Seçili ürünler buraya gelecek-->
+                        <h5  id = "no-content"  class="card-title">Have no product</h5>
+                     </div>
+               
+                    <!--<h5 class="card-title">Product Name</h5>-->
+                    <!-- <p class="card-text">Product Description</p>-->
+                   
+                    <div class="d-flex justify-content-between">
+    
+                        <button type="button"  id = "chc-out"  class="filter-btn">Check Out</button>
+                        <h3  id = "total-prc"class="price ml-4"> Total Price $<span id = "tp"class="price">0</span></h3>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+      </div>
+   
+
+</div>
+    <section class="menu">
+<div class="title">
+<h2>Our Menu</h2>
+<div class="underline"></div>
+
+
+</div>
+<div class="btn-container">
+    <!-- <button class="filter-btn" type="button" data-id="All">All</button>
+    <button class="filter-btn" type="button"  data-id="Breakfast">Breakfast</button>
+    <button class="filter-btn" type="button" data-id="lunch">Lunch</button>
+    <button class="filter-btn" type="button" data-id="dessert">Dessert</button> -->
+</div>
+<div class="section-center">
+<!-- <article class="menu-item">
+    <img src="./img/menu-items.jpeg" alt="menu item" class="photo">
+<div class="item-info">
+    <header>
+        <h4>Buttermilk Pancakes</h4>
+        <h4 class="price">$15</h4>
+    </header>
+  <p class="item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum adipisci voluptatibus facere in qui non nemo doloribus pariatur placeat accusamus!</p>
+</div>
+</article> -->
+</div>
+ </section>
+    
+
+
+ 
+
+</body>
+<script src="/js/menu.js"></script>
+<script src="https://kit.fontawesome.com/5bd99fda49.js"
+    crossorigin="anonymous"></script>
+</html>
